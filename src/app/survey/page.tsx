@@ -13,7 +13,7 @@ const Survey = () => {
             width={1000}
             height={600}/>
         </div>
-        <div className='self-center'>
+        <div data-aos="zoom-out-right" className='self-center'>
             <h2 className='text-4xl md:text-6xl font-bold'>Survey</h2>
 
             <h2 className='text-4xl md:text-6xl font-bold'>About Our

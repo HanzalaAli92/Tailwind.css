@@ -1,14 +1,26 @@
-import React from 'react'
+"use client"
+import React, { useEffect } from 'react'
 import Dash from '@/components/Dash'
 import Image from 'next/image'
+import Aos from "aos"
+import "aos/dist/aos.css"
 
 const Feature = () => {
+  useEffect (() => {
+    Aos.init({
+      easing: "ease-in-back",
+      duration: 1200,
+      mirror: true,
+      anchorPlacement: "bottom-bottom",
+      offset: 160,
+    });
+  })
   return (
     <div className='container pt-40'>
        
-      <div className='text-center'>
+      <div data-aos="zoom-out-down" className='text-center'>
       <h2  className='text-6xl font-bold'>Our</h2>
-      <h2  className='text-6xl font-bold pt-2'>
+      <h2 className='text-6xl font-bold pt-2'>
         Feature <span className='text-accent'>Food</span>
       </h2>
 
